@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity"
+    android:background="@color/azul_2">
+
+    <ImageView
+        android:id="@+id/imgDegree"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/txtTiempo"
+        app:layout_constraintTop_toTopOf="@+id/txtTiempo"
+        app:srcCompat="@drawable/degree" />
+
+    <TextView
+        android:id="@+id/txtTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/stringCero"
+        android:textSize="150sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAstro" />
+
+    <ImageView
+        android:id="@+id/imgAstro"
+        android:layout_width="164dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clear_night" />
+
+    <TextView
+        android:id="@+id/txtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/light_gray"
+        android:text="@string/placeholderTiempo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAstro" />
+
+    <TextView
+        android:id="@+id/txtHumedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/stringHumedad"
+        android:textSize="@dimen/txtTiempos"
+        android:textColor="@color/light_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiempo" />
+
+    <TextView
+        android:id="@+id/txtLluvia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/light_gray"
+        android:text="@string/txtLluvia"
+        android:textSize="@dimen/txtTiempos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiempo" />
+
+    <TextView
+        android:id="@+id/txtPorcentajeLluvia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="@dimen/txtTiempos"
+        android:textColor="@color/white"
+        android:text="@string/txtPlaceholderLluvia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLluvia" />
+
+    <TextView
+        android:id="@+id/txtPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtTiempos"
+        android:text="@string/txtPlaceholderHumedad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHumedad" />
+
+    <TextView
+        android:id="@+id/txtTextoTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/txtPlaceholderDescripcion"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtTiempos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTiempo" />
+
+    <TextView
+        android:id="@+id/txtRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="3dp"
+        android:textSize="@dimen/txtRegion"
+        android:textColor="@color/white"
+        android:text="@string/txtPlaceholderRegion"
+        app:layout_constraintBottom_toTopOf="@+id/imgAstro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

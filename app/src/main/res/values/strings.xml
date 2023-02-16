@@ -2,4 +2,13 @@
     <string name="app_name">ConsultaTiempo</string>
     <string name="stringLayout">Latitud</string>
     <string name="stringLongitud">Longitud</string>
+    <string name="stringConsulat">CONSULTAR TIEMPO</string>
+    <string name="stringCero">0</string>
+    <string name="placeholderTiempo">11:07p. m.</string>
+    <string name="stringHumedad">HUMEDAD</string>
+    <string name="txtLluvia">LLUVIA</string>
+    <string name="txtPlaceholderDescripcion">Parcialmente Nublado</string>
+    <string name="txtPlaceholderLluvia">0%</string>
+    <string name="txtPlaceholderHumedad">85%</string>
+    <string name="txtPlaceholderRegion">Europe/Madrid</string>
 </resources>
